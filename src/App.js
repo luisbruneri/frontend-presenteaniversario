@@ -53,11 +53,15 @@ function App() {
         listaPresentes();
     }, [])
 
-    function openModal() {
+function openModal() {
         setTitulo('Novo Presente');
         setSubtitulo('Adicionar Presente');
         setClickEditar(false);
         setClickAdicionar(true);
+        setNome('');
+        setValor('');
+        setDestinatario('');
+        setIdPresente('');
         setOpen(true);
     };
 
